@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    background-color: #121517;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.header-links a {
+    font-size: 23px;
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: 'Montserrat';
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: calc(100% - 184px);
+    max-width: 100%;
+    gap: 155px;
+}
+
+.main-page-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h1 {
+    font-size: 80px;
+    color: #D9D9D9;
+    max-width: 543px;
+}
+
+.green-text {
+    color: #35C66B;
+}
+
+.main-page p {
+    font-size: 20px;
+    color: #D9D9D9;
+    margin: 0 0 40px 0;
+    max-width: 600px;
+}
+
+.main-page-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.main-page-Sbtn {
+    width: 333px;
+    height: 75px;
+    background: linear-gradient(100deg, #35C66B, #237249);
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    border-radius: 82px;
+    cursor: pointer;
+}
+
+.main-page-Mbtn {
+    width: 167px;
+    height: 75px;
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 3px 1px #D9D9D9;
+    color: #D9D9D9;
+    font-size: 24px;
+    border-radius: 82px;
+    cursor: pointer;
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-num {
+    font-size: 62px;
+    color: #D9D9D9;
+}
+
+.stat-num .plus {
+    color: #35C66B;
+}
+
+.stat-text {
+    font-size: 20px;
+    color: #8E9396;
+}
+
+@media (max-width: 700px) {
+    .main-page {
+        flex-direction: column-reverse;
+        gap: 10px;
+        width: calc(100% - 50px);
+    }
+
+    .img {
+        max-width: 343px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .main-page p {
+        font-size: 12px;
+    }
+}
