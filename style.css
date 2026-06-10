@@ -98,7 +98,7 @@ header {
     padding: 1rem;
     min-width: 14rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
-    z-index: 10;
+    z-index: 3;
 }
 
 .mobile-menu a {
@@ -438,7 +438,7 @@ footer {
 .popup {
     display: none;
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;

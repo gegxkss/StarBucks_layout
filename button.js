@@ -14,19 +14,19 @@ if (openPopupBtn && orderPopup) {
 if (orderForm && orderPopup) {
     orderForm.addEventListener('submit', () => {
         const coffee = document.getElementById('coffeeType').value;
-        const name = document.getElementById('nameInputValue').value;
-        const phone = document.getElementById('phoneInputValue').value;
-        console.log(`Заказ ${coffee}, Имя ${name}, Телефон ${phone}`);
+        const nameInputValue = document.getElementById('nameInput').value;
+        const phoneInputValue = document.getElementById('phoneInput').value;
+        console.log(`Заказ ${coffee}, Имя ${nameInputValue}, Телефон ${phoneInputValue}`);
         console.log(`Ваш заказ принят`);
 
         orderForm.reset();
-        orderPopup.style.display = 'none';
     });
 }
 
 if (closePopupBtn && orderPopup) {
     closePopupBtn.addEventListener('click', () => {
         console.log('попап закрыт');
-        orderPopup.style.display = 'none';
+        orderPopup.classList.toggle('active');
+        openPopupBtn.classList.toggle('active');
     });
 }
