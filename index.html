@@ -80,9 +80,9 @@
                         <option value="espresso">Эспрессо</option>
                     </select>
                     <p>Ваше имя:</p>
-                    <input id="userName" type="text" required>
+                    <input id="nameInputValue" type="text" required>
                     <p>Номер телефона:</p>
-                    <input id="userPhone" type="text" required>
+                    <input id="phoneInputValue" type="text" required>
                     <button class="submit-order-btn">Оформить заказ</button>
                 </form>
             </div>
@@ -126,15 +126,19 @@
             </defs>
         </svg>
     </div>
-    <div class="advantages"></div>
+    <picture>
+        <source srcset="./assets/images/mobile-advantages.png" media="(max-width: 480px)">
+        <img class="advantages" src="./assets/images/advantages.png" />
+    </picture>
 
     <div class="we-make">
-        <div class="rest"></div>
+        <img class="rest" src="./assets/images/rest.png" />
+
         <div class="right-side">
             <h1>We make<span class="green-text"> delicious</span></h1>
             <p>Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we
                 are ready to destroy the market</p>
-            <div class="cook-process"></div>
+            <img class="cook-progress" src="./assets/images/cook-process.png" />
         </div>
     </div>
 
@@ -169,7 +173,7 @@
                 are ready to destroy the market</p>
             <h1>Our New<span class="green-text"> events</span></h1>
         </div>
-        <div class="events"></div>
+        <img class="events" src="./assets/images/events.png" />
     </div>
 
     <div class="contacts-container">
@@ -180,7 +184,7 @@
             <h2>@StarBuckscoffee</h2>
             <h2> + 7 999 999 99 99</h2>
         </div>
-        <div class="contacts"></div>
+        <img class="contacts" src="./assets/images/contacts.png" />
     </div>
 
 
